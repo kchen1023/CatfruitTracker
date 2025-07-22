@@ -28,6 +28,7 @@ Tables:
   - Behemoth Stones
   - Behemoth Gems
 - Cats + Materials
+  - Special
   - Rare
   - Super Rate
   - Uber Rare
