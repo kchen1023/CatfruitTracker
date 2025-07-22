@@ -16,6 +16,7 @@ With user input, the "TOTAL NEEDED" row will update, showing the remaining amoun
 ![IMG_1209](https://github.com/user-attachments/assets/ce3541b8-0b62-4d8b-82ba-d6624746267c)
 
 **Data Storage: PostgreSQL**
+
 Tables:
 - Cats
   - Rare
