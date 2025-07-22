@@ -14,3 +14,19 @@ At the bottom, there will be areas for the user to fill in with their inventory.
 
 With user input, the "TOTAL NEEDED" row will update, showing the remaining amount of materials needed.
 ![IMG_1209](https://github.com/user-attachments/assets/ce3541b8-0b62-4d8b-82ba-d6624746267c)
+
+**Data Storage: PostgreSQL**
+Tables:
+- Cats
+  - Rare
+  - Super Rate
+  - Uber Rare
+- Materials
+  - Seeds
+  - Fruits
+  - Behemoth Stones
+  - Behemoth Gems
+- Cats + Materials
+  - Rare
+  - Super Rate
+  - Uber Rare
