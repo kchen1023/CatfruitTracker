@@ -1,0 +1,42 @@
+id,name,Material 1,Material 2,Material 3,Material 4,Material 5
+37,Pogo Cat,purple_seed,red_seed,yellow_seed,blue_fruit,green_fruit
+38,Wheel Cat,green_seed,purple_seed,red_seed,yellow_seed,blue_fruit
+41,Salon Cat,green_seed,purple_seed,yellow_seed,red_fruit,blue_fruit
+46,Jurassic Cat,purple_seed,blue_seed,yellow_seed,green_fruit,red_fruit
+47,Viking Cat,green_seed,purple_seed,blue_seed,yellow_seed,red_fruit
+48,Pirate Cat,green_seed,purple_seed,blue_seed,yellow_seed,red_fruit
+49,Thief Cat,green_seed,red_seed,blue_seed,green_fruit,purple_fruit
+50,Bishop Cat,purple_seed,red_seed,blue_seed,yellow_seed,green_fruit
+51,Fortune Teller Cat,purple_seed,red_seed,blue_seed,yellow_seed,green_fruit
+52,Shaman Cat,green_fruit,purple_seed,red_seed,blue_seed,yellow_seed
+55,Witch Cat,green_seed,purple_seed,blue_seed,yellow_seed,red_fruit
+56,Archer Cat,purple_seed,red_seed,blue_seed,yellow_seed,green_fruit
+58,Swordsman Cat,green_seed,purple_seed,blue_seed,yellow_seed,red_fruit
+145,Cat Gunslinger,green_seed,red_seed,blue_seed,yellow_seed,purple_fruit
+146,Stilts Cat,green_seed,purple_seed,red_seed,blue_seed,yellow_fruit
+147,Tin Cat,green_seed,red_seed,blue_seed,yellow_seed,purple_fruit
+148,Rocker Cat,green_seed,purple_seed,red_seed,blue_seed,yellow_fruit
+149,Mer-Cat,purple_seed,red_seed,blue_seed,yellow_seed,green_fruit
+197,Psychocat,green_seed,purple_seed,red_seed,yellow_seed,blue_fruit
+198,Onmyoji Cat,purple_seed,red_seed,blue_seed,yellow_seed,green_fruit
+308,Gardener Cat,green_seed,red_seed,blue_seed,yellow_seed,purple_fruit
+325,Welterweight Cat,green_seed,red_seed,blue_seed,yellow_seed,purple_fruit
+376,Rover Cat,green_seed,purple_seed,red_seed,yellow_seed,blue_fruit
+523,Wushu Cat,purple_seed,red_seed,blue_seed,yellow_seed,green_fruit
+495,Matador Cat,epic_seed,green_seed,red_seed,blue_seed,red_fruit
+319,Killer Cat,purple_behemoth_stone,red_behemoth_stone,blue_behemoth_stone,green_behemoth_stone,yellow_behemoth_stone
+282,Awa-Odori Cat,red_behemoth_stone,green_behemoth_stone,yellow_behemoth_stone,,
+227,Pumpcat,purple_behemoth_stone,green_behemoth_stone,yellow_behemoth_stone,,
+658,Ancient Egg: N101,purple_behemoth_stone,red_behemoth_stone,,,
+659,Ancient Egg: N102,blue_behemoth_stone,green_behemoth_stone,,,
+663,Ancient Egg: N103,purple_behemoth_stone,red_behemoth_stone,blue_behemoth_stone,,
+664,Ancient Egg: N104,blue_behemoth_stone,green_behemoth_stone,yellow_behemoth_stone,,
+675,Ancient Egg: N105,purple_behemoth_stone,red_behemoth_stone,yellow_behemoth_stone,,
+676,Ancient Egg: N106,blue_behemoth_stone,green_behemoth_stone,yellow_behemoth_stone,,
+697,Ancient Egg: N107,purple_behemoth_stone,blue_behemoth_stone,yellow_behemoth_stone,,
+707,Ancient Egg: N109,purple_behemoth_stone,red_behemoth_stone,yellow_behemoth_stone,,
+717,Ancient Egg: N110,purple_behemoth_stone,red_behemoth_gem,blue_behemoth_gem,,
+724,Ancient Egg: N112,red_behemoth_stone,green_behemoth_stone,purple_behemoth_gem,blue_behemoth_gem,
+67,Li'l Gau,purple_seed,blue_seed,yellow_seed,,
+111,Nono,purple_seed,blue_seed,green_seed,,
+370,Sakura the Cat,purple_seed,red_seed,blue_seed,,
