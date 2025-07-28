@@ -1,1 +1,0 @@
-temporary res folder
