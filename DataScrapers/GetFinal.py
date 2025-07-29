@@ -46,4 +46,4 @@ df = pd.DataFrame(results)
 # print(df)
 
 df.to_csv("battle_cats/super_rare_cats_final.csv", index=False)
-print(f"✅ sav")
+print(f"✅ saved")
