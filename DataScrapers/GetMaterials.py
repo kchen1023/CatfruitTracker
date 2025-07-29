@@ -4,7 +4,7 @@ import pandas as pd
 
 # load files
 input_file = "battle_cats/cats_super_rare/super_rare_cats_list.csv"
-rare_cats = pd.read_csv(input_file)
+cats_list = pd.read_csv(input_file)
 
 # wiki URL used to scrape data
 base_url = "https://battlecats.miraheze.org/wiki/{}_(Super_Rare_Cat)"
@@ -57,7 +57,7 @@ def normalize_material_name(raw_name):
 # get and store results
 results = []
 
-for cat in rare_cats["name"]:
+for cat in cats_list["name"]:
     wiki_name = cat.replace(" ", "_")
     url = base_url.format(wiki_name)
     print(f"🔍 scraping *{cat}* at {url}")
