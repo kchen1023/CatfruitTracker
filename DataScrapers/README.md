@@ -6,7 +6,7 @@
 `MergeIDsAndCats.py`
 - attaches an id number to the cats to be used as primary key
 
-`GetMaterialsAmount.py`
+`GetMaterialsCosts.py`
 - scrapes a [different community project](https://thanksfeanor.pythonanywhere.com/UDP) 
 - retrieve the required amount of evolution materials needed
 - number is not explicitly stated in html of wiki site
