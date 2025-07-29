@@ -29,7 +29,7 @@ results = []
 for _, row in merged_df.iterrows():
     cat = row['name']
     cost_list = cost_dict.get(cat, [])
-    print(cost_list)
+    # print(cost_list)
     
     new_row = row.copy()
     cost_index = 0
