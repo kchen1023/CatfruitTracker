@@ -60,7 +60,7 @@ results = []
 for cat in rare_cats["name"]:
     wiki_name = cat.replace(" ", "_")
     url = base_url.format(wiki_name)
-    print(f"🔍 Scraping *{cat}* at {url}")
+    print(f"🔍 scraping *{cat}* at {url}")
 
     try:
         res = requests.get(url, headers=headers)
@@ -73,7 +73,7 @@ for cat in rare_cats["name"]:
         table = soup.find("table", class_="CatfruitTable")
         # if table not found, then table (most likely) not exist:
         if not table:
-            print(f"🚫 nmo evolution information found for {cat}")
+            print(f"🚫 no evolution information found for {cat}")
             continue
         else:
             evolve_materials = table.find("tr", class_="evolve-materials")
@@ -104,7 +104,7 @@ for cat in rare_cats["name"]:
         results.append(row)
 
     except Exception as e:
-        print(f"❌ Error processing {cat}: {e}")
+        print(f"❌ error processing {cat}: {e}")
 
 # save output
 df = pd.DataFrame(results)
@@ -118,4 +118,4 @@ df = df[ordered_cols]
 print(df)
 
 df.to_csv("battle_cats/super_rare_cats_materials.csv", index=False)
-print("✅ Saved")
+print("✅ saved")
