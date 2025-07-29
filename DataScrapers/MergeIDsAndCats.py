@@ -20,4 +20,4 @@ final_df = merged_df[["id"] + original_cols]
 output_path = "battle_cats/super_rare_cats_merged.csv"
 final_df.to_csv(output_path, index=False)
 
-print(f"✅ Saved")
+print(f"✅ saved")
