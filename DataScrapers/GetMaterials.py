@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 # load files
-input_file = "battle_cats/cats_super_rare/super_rare_cats_list.csv"
+input_file = "BattleCats/super_rare_cats_list.csv"
 cats_list = pd.read_csv(input_file)
 
 # wiki URL used to scrape data
@@ -19,38 +19,38 @@ headers = {
 
 # all materials in same format as SQL DB
 material_columns = [
-    "green_seed", "purple_seed", "red_seed", "blue_seed", "yellow_seed",
-    "epic_seed", "aku_seed", "elder_seed", "gold_seed",
-    "green_fruit", "purple_fruit", "red_fruit", "blue_fruit", "yellow_fruit",
-    "epic_fruit", "aku_fruit", "elder_fruit", "gold_fruit",
-    "purple_behemoth_stone", "red_behemoth_stone", "blue_behemoth_stone",
-    "green_behemoth_stone", "yellow_behemoth_stone", "epic_behemoth_stone",
-    "purple_behemoth_gem", "red_behemoth_gem", "blue_behemoth_gem",
-    "green_behemoth_gem", "yellow_behemoth_gem"
+    "greenSeed", "purpleSeed", "redSeed", "blueSeed", "yellowSeed",
+    "epicSeed", "akuSeed", "elderSeed", "goldSeed",
+    "greenFruit", "purpleFruit", "redFruit", "blueFruit", "yellowFruit",
+    "epicFruit", "akuFruit", "elderFruit", "goldFruit",
+    "purpleBehemothStone", "redBehemothStone", "blueBehemothStone",
+    "greenBehemothStone", "yellowBehemothStone", "epicBehemothStone",
+    "purpleBehemothGem", "redBehemothGem", "blueBehemothGem",
+    "greenBehemothGem", "yellowBehemothGem"
 ]
 
 # converts wiki material name to match DB names
 def normalize_material_name(raw_name):
     if raw_name == "RainbowSeed":
-        return "epic_seed"
+        return "epicSeed"
     if raw_name == "RainbowFruit":
-        return "epic_fruit"
+        return "epicFruit"
     if raw_name == "AncientFruit":
-        return "elder_fruit"
+        return "elderFruit"
     if raw_name == "GoldenFruit":
-        return "gold_fruit"
+        return "goldFruit"
     if raw_name.endswith("Stone"):
-        name = raw_name.replace('Stone', '').lower()
-        return f"{name}_behemoth_stone"
+        name = raw_name.replace("Stone", "").lower()
+        return f"{name}BehemothStone"
     if raw_name.endswith("Gem"):
-        name = raw_name.replace('Gem', '').lower()
-        return f"{name}_behemoth_gem"
+        name = raw_name.replace("Gem", "").lower()
+        return f"{name}BehemothGem"
     if raw_name.endswith("Seed"):
-        name = raw_name.replace('Seed', '').lower()
-        return f"{name}_seed"
+        name = raw_name.replace("Seed", "").lower()
+        return f"{name}Seed"
     if raw_name.endswith("Fruit"):
-        name = raw_name.replace('Fruit', '').lower()
-        return f"{name}_fruit"
+        name = raw_name.replace("Fruit", "").lower()
+        return f"{name}Fruit"
     
     return None
 
@@ -81,12 +81,13 @@ for cat in cats_list["name"]:
         # initialize row with all materials set to 0
         row = {col: 0 for col in material_columns}
         row["name"] = cat
+        row["rarity"] = "super_rare"
 
         # mark found materials as 1 (exists)
         for td in evolve_materials.find_all("td"):
             fruit_link = td.find("a")
-            if fruit_link and 'title' in fruit_link.attrs:
-                raw_name = fruit_link['title']
+            if fruit_link and "title" in fruit_link.attrs:
+                raw_name = fruit_link["title"]
             # print(raw_name)
 
             # normalize the names to fit DB
@@ -108,14 +109,14 @@ for cat in cats_list["name"]:
 
 # save output
 df = pd.DataFrame(results)
-ordered_cols = ["name"]
+ordered_cols = ["name", "rarity"]
 for col in material_columns:
-    if col != "name":
+    if col not in ["name", "rarity"]:
         ordered_cols.append(col)
 
 # put name col first
 df = df[ordered_cols]
 print(df)
 
-df.to_csv("battle_cats/super_rare_cats_materials.csv", index=False)
+df.to_csv("BattleCats/super_rare_cats_materials.csv", index=False)
 print("✅ saved")
