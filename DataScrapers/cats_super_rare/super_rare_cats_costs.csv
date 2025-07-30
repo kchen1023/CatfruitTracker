@@ -1,44 +1,44 @@
-id,name,numbers
-30,Bodhisattva Cat,"['4', '2', '1', '1', '1']"
-31,Delinquent Cat,"['4', '1', '1', '2', '1']"
-32,Hip Hop Cat,"['2', '4', '1', '1', '1']"
-33,Kotatsu Cat,"['4', '1', '2', '1', '1']"
-35,Nerd Cat,"['2', '2', '2', '2', '1']"
-36,Swimmer Cat,"['4', '1', '2', '1', '1']"
-39,Apple Cat,"['1', '4', '1', '2', '1']"
-40,Bath Cat,"['1', '4', '1', '2', '1']"
-61,Sushi Cat,"['1', '2', '4', '1', '1']"
-144,Cat Base Mini,"['1', '5']"
-150,Juliet Cat,"['1', '2', '1', '4', '1']"
-151,Weightlifter Cat,"['1', '4', '1', '2', '1']"
-152,Figure Skating Cats,"['2', '2', '2', '2', '1']"
-153,Cat Toaster,"['2', '1', '1', '4', '1']"
-199,Surfer Cat,"['1', '2', '4', '1', '1']"
-237,Freshman Cat Jobs,"['1', '5']"
-239,Sniper the Recruit,"['1', '5']"
-238,Rich Cat III,"['1', '5']"
-307,Vaulter Cat,"['1', '4', '2', '1', '1']"
-377,Fencer Cat,"['1', '1', '4', '2', '1']"
-522,Nymph Cat,"['2', '3']"
-443,Driller Cat,"['1', '10']"
-444,Piledriver Cat,"['1', '10']"
-445,Cutter Cat,"['1', '10']"
-446,Backhoe Cat,"['1', '10']"
-447,Miter Saw Cat,"['1', '10']"
-314,Years-End Neneko,"['3', '3', '3', '1', '1']"
-589,Valentine's Neneko,"['1', '1', '2']"
-228,Gloomy Neneko,N/A on UDP
-332,Easter Neneko,"['1', '3', '3', '3', '3']"
-276,Sunny Neneko,"['1', '3', '3', '3', '3']"
-565,Suntan Cat,"['3', '3', '3', '5']"
-566,Lifeguard Cats,"['3', '3', '3', '3']"
-129,Gold Cat,"['1', '3']"
-68,Reaper,['3']
-160,Yurinchi,['3']
-344,Orthos,['3']
-173,Baby Mola,['3']
-390,Aoi Hayakawa,['3']
-391,Mizuki Tachibana,['3']
-392,Hijiri Rokudo,['3']
-410,Asuka Langley,['3']
-409,Rei Ayanami,N/A on UDP
+name,numbers
+Bodhisattva Cat,"['4', '2', '1', '1', '1']"
+Delinquent Cat,"['4', '1', '1', '2', '1']"
+Hip Hop Cat,"['2', '4', '1', '1', '1']"
+Kotatsu Cat,"['4', '1', '2', '1', '1']"
+Nerd Cat,"['2', '2', '2', '2', '1']"
+Swimmer Cat,"['4', '1', '2', '1', '1']"
+Apple Cat,"['1', '4', '1', '2', '1']"
+Bath Cat,"['1', '4', '1', '2', '1']"
+Sushi Cat,"['1', '2', '4', '1', '1']"
+Cat Base Mini,"['1', '5']"
+Juliet Cat,"['1', '2', '1', '4', '1']"
+Weightlifter Cat,"['1', '4', '1', '2', '1']"
+Figure Skating Cats,"['2', '2', '2', '2', '1']"
+Cat Toaster,"['2', '1', '1', '4', '1']"
+Surfer Cat,"['1', '2', '4', '1', '1']"
+Freshman Cat Jobs,"['1', '5']"
+Sniper the Recruit,"['1', '5']"
+Rich Cat III,"['1', '5']"
+Vaulter Cat,"['1', '4', '2', '1', '1']"
+Fencer Cat,"['1', '1', '4', '2', '1']"
+Nymph Cat,"['2', '3']"
+Driller Cat,"['1', '10']"
+Piledriver Cat,"['1', '10']"
+Cutter Cat,"['1', '10']"
+Backhoe Cat,"['1', '10']"
+Miter Saw Cat,"['1', '10']"
+Years-End Neneko,"['3', '3', '3', '1', '1']"
+Valentine's Neneko,"['1', '1', '2']"
+Gloomy Neneko,N/A on UDP
+Easter Neneko,"['1', '3', '3', '3', '3']"
+Sunny Neneko,"['1', '3', '3', '3', '3']"
+Suntan Cat,"['3', '3', '3', '5']"
+Lifeguard Cats,"['3', '3', '3', '3']"
+Gold Cat,"['1', '3']"
+Reaper,['3']
+Yurinchi,['3']
+Orthos,['3']
+Baby Mola,['3']
+Aoi Hayakawa,['3']
+Mizuki Tachibana,['3']
+Hijiri Rokudo,['3']
+Asuka Langley,['3']
+Rei Ayanami,N/A on UDP
