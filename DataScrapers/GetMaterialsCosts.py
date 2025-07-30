@@ -3,14 +3,14 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 # load files
-input_file = pd.read_csv("battle_cats/super_rare_cats_merged.csv")
+input_file = pd.read_csv("BattleCats/super_rare_cats_merged.csv")
 
 results = []
 
 for _, row in input_file.iterrows():
     # pad left with 0 if only two digits to fit link
-    formatted_cat_id = str(row['id']).zfill(3)
-    cat = row['name']
+    formatted_cat_id = str(row["id"]).zfill(3)
+    cat = row["name"]
     url = f"https://thanksfeanor.pythonanywhere.com/UDP/{formatted_cat_id}"
 
     try:
@@ -32,12 +32,13 @@ for _, row in input_file.iterrows():
         # get rid of the "x" in the retrieved value (e.g., "x5" -> "5")
         numbers = []
         for cell in cells:
-            text = cell.text.strip().replace("x", "")
+            # unicode x
+            text = cell.text.strip().replace("×", "")
             numbers.append(text)
 
         # numbers = # of materials needed for each item for the evolution
         results.append({
-            "id": str(row['id']),
+            # "id": str(row["id"]),
             "name": cat,
             "numbers": numbers
         })
@@ -45,7 +46,7 @@ for _, row in input_file.iterrows():
     except Exception as e:
         # UDP does have information on all of the cats
         results.append({
-            "id": formatted_cat_id,
+            # "id": formatted_cat_id,
             "name": cat,
             "numbers": "N/A on UDP"
         })
@@ -53,5 +54,5 @@ for _, row in input_file.iterrows():
 df = pd.DataFrame(results)
 print(df)
 
-df.to_csv("battle_cats/super_rare_cats_costs.csv", index=False)
+df.to_csv("BattleCats/super_rare_cats_costs.csv", index=False)
 print("✅ saved")

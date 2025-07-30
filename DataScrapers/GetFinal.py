@@ -3,21 +3,21 @@ import ast
 from pathlib import Path
 
 # load csv files
-merged_df = pd.read_csv("battle_cats/super_rare_cats_merged.csv")
-costs_df = pd.read_csv("battle_cats/super_rare_cats_costs.csv")
+merged_df = pd.read_csv("BattleCats/super_rare_cats_merged.csv")
+costs_df = pd.read_csv("BattleCats/super_rare_cats_costs.csv")
 
 # skip id and name cols
 material_columns = []
 for col in merged_df.columns:
-    if col not in ['id', 'name']:
+    if col not in ["id", "name", "rarity"]:
         material_columns.append(col)
 
 # parse valid rows from costs_df and clean
-costs_df = costs_df[costs_df['numbers'].str.startswith("[")].copy()
-costs_df.loc[:, 'numbers'] = costs_df['numbers'].apply(ast.literal_eval)
+costs_df = costs_df[costs_df["numbers"].str.startswith("[")].copy()
+costs_df.loc[:, "numbers"] = costs_df["numbers"].apply(ast.literal_eval)
 
 # create mapping from name to cost list
-cost_dict = dict(zip(costs_df['name'], costs_df['numbers']))
+cost_dict = dict(zip(costs_df["name"], costs_df["numbers"]))
 
 # loop through the cols and find the non-zero cols
 # this means the material is needed to evolve
@@ -27,7 +27,7 @@ cost_dict = dict(zip(costs_df['name'], costs_df['numbers']))
 results = []
 
 for _, row in merged_df.iterrows():
-    cat = row['name']
+    cat = row["name"]
     cost_list = cost_dict.get(cat, [])
     # print(cost_list)
     
@@ -45,5 +45,5 @@ for _, row in merged_df.iterrows():
 df = pd.DataFrame(results)
 # print(df)
 
-df.to_csv("battle_cats/super_rare_cats_final.csv", index=False)
+df.to_csv("BattleCats/super_rare_cats_final.csv", index=False)
 print(f"✅ saved")
