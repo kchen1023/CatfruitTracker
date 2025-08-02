@@ -5,5 +5,5 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "rare_cats")
-public class RareCat extends BaseCat {
+public class RareCat extends Cat {
 }

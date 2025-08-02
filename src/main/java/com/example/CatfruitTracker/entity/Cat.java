@@ -1,11 +1,14 @@
 package com.example.CatfruitTracker.entity;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 
-@MappedSuperclass
-public class BaseCat {
+@Entity
+public class Cat {
     @Id
+    @Column(name = "id")
     private Integer id;
     private String name;
     private String rarity;
