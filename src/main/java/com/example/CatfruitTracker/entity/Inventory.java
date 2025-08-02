@@ -1,13 +1,6 @@
 package com.example.CatfruitTracker.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
-@Entity
 public class Inventory {
-    @Id
-    private Long id;
-
     // seeds
     private int green_seed;
     private int purple_seed;
@@ -44,12 +37,4 @@ public class Inventory {
     private int blue_behemoth_gem;
     private int green_behemoth_gem;
     private int yellow_behemoth_gem;
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
 }

@@ -1,22 +1,22 @@
-// handles `/cats` and `/selected`
-
 package com.example.CatfruitTracker.controller;
 
+import com.example.CatfruitTracker.entity.Cat;
 import com.example.CatfruitTracker.repository.CatRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
+@RequestMapping("/")
 public class CatController {
-    @Autowired
-    private CatRepository catRepository;
+    private final CatRepository catRepository;
 
-    public String index() {
-        return "index";
+    public CatController(CatRepository catRepository) {
+        this.catRepository = catRepository;
     }
 
-//    @GetMapping("/cats")
+    @GetMapping
+    public List<Cat> findAll() {
+        return catRepository.findAll();
+    }
 }
