@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Table</title>
+</head>
+<body>
+    <h1>All Units with True Form Evolution</h1>
+    <h2><em>Notice: currently only have data for *Rare* and *Super Rare* units</em></h2>
+    <h3>Please contact me if there are any numerical errors @icyii</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th style="background-color: gray">ID</th>
+                <th style="background-color: gray">Name</th>
+                <th style="background-color: gray">Rarity</th>
+                <th style="background-color: gray"><img src="/images/green_seed.webp" alt="Green Seed" width="30" title="Green Seed"/></th>
+                <th style="background-color: gray"><img src="/images/purple_seed.webp" alt="Purple Seed" width="30" title="Purple Seed"/></th>
+                <th style="background-color: gray"><img src="/images/red_seed.webp" alt="Red Seed" width="30" title="Red Seed"/></th>
+                <th style="background-color: gray"><img src="/images/blue_seed.webp" alt="Blue Seed" width="30" title="Blue Seed"/></th>
+                <th style="background-color: gray"><img src="/images/yellow_seed.webp" alt="Yellow Seed" width="30" title="Yellow Seed"/></th>
+                <th style="background-color: gray"><img src="/images/epic_seed.webp" alt="Epic Seed" width="30" title="Epic Seed"/></th>
+                <th style="background-color: gray"><img src="/images/aku_seed.webp" alt="Aku Seed" width="30" title="Aku Seed"/></th>
+                <th style="background-color: gray"><img src="/images/elder_seed.webp" alt="Elder Seed" width="30" title="Elder Seed"/></th>
+                <th style="background-color: gray"><img src="/images/gold_seed.webp" alt="Gold Seed" width="30" title="Gold Seed"/></th>
+
+                <th style="background-color: gray"><img src="/images/green_fruit.webp" alt="Green Fruit" width="30" title="Green Fruit"/></th>
+                <th style="background-color: gray"><img src="/images/purple_fruit.webp" alt="Purple Fruit" width="30" title="Purple Fruit"/></th>
+                <th style="background-color: gray"><img src="/images/red_fruit.webp" alt="Red Fruit" width="30" title="Red Fruit"/></th>
+                <th style="background-color: gray"><img src="/images/blue_fruit.webp" alt="Blue Fruit" width="30" title="Blue Fruit"/></th>
+                <th style="background-color: gray"><img src="/images/yellow_fruit.webp" alt="Yellow Fruit" width="30" title="Yellow Fruit"/></th>
+                <th style="background-color: gray"><img src="/images/epic_fruit.webp" alt="Epic Fruit" width="30" title="Epic Fruit"/></th>
+                <th style="background-color: gray"><img src="/images/aku_fruit.webp" alt="Aku Fruit" width="30" title="Aku Fruit"/></th>
+                <th style="background-color: gray"><img src="/images/elder_fruit.webp" alt="Elder Fruit" width="30" title="Elder Fruit"/></th>
+                <th style="background-color: gray"><img src="/images/gold_fruit.webp" alt="Gold Fruit" width="30" title="Gold Fruit"/></th>
+
+                <th style="background-color: gray"><img src="/images/purple_behemoth_stone.webp" alt="Purple Behemoth Stone" width="30" title="Purple Behemoth Stone"/></th>
+                <th style="background-color: gray"><img src="/images/red_behemoth_stone.webp" alt="Red Behemoth Stone" width="30" title="Red Behemoth Stone"/></th>
+                <th style="background-color: gray"><img src="/images/blue_behemoth_stone.webp" alt="Blue Behemoth Stone" width="30" title="Blue Behemoth Stone"/></th>
+                <th style="background-color: gray"><img src="/images/green_behemoth_stone.webp" alt="Green Behemoth Stone" width="30" title="Green Behemoth Stone"/></th>
+                <th style="background-color: gray"><img src="/images/yellow_behemoth_stone.webp" alt="Yellow Behemoth Stone" width="30" title="Yellow Behemoth Stone"/></th>
+                <th style="background-color: gray"><img src="/images/epic_behemoth_stone.webp" alt="Epic Behemoth Stone" width="30" title="Epic Behemoth Stone"/></th>
+
+                <th style="background-color: gray"><img src="/images/purple_behemoth_gem.webp" alt="Purple Behemoth Gem" width="30" title="Purple Behemoth Gem"/></th>
+                <th style="background-color: gray"><img src="/images/red_behemoth_gem.webp" alt="Red Behemoth Gem" width="30" title="Red Behemoth Gem"/></th>
+                <th style="background-color: gray"><img src="/images/blue_behemoth_gem.webp" alt="Blue Behemoth Gem" width="30" title="Blue Behemoth Gem"/></th>
+                <th style="background-color: gray"><img src="/images/green_behemoth_gem.webp" alt="Green Behemoth Gem" width="30" title="Green Behemoth Gem"/></th>
+                <th style="background-color: gray"><img src="/images/yellow_behemoth_gem.webp" alt="Yellow Behemoth Gem" width="30" title="Yellow Behemoth Gem"/></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="cat: ${cats}">
+                <td th:text="${cat.id}" style="background-color: lightgray"></td>
+                <td th:text="${cat.name}" style="background-color: lightgray"></td>
+                <td th:text="${cat.rarity}" style="background-color: lightgray"></td>
+                <td th:text="${cat.greenSeed}" th:style="${cat.greenSeed != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.purpleSeed}" th:style="${cat.purpleSeed != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.redSeed}" th:style="${cat.redSeed != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.blueSeed}" th:style="${cat.blueSeed != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.yellowSeed}" th:style="${cat.yellowSeed != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.epicSeed}" th:style="${cat.epicSeed != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.akuSeed}" th:style="${cat.akuSeed != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.elderSeed}" th:style="${cat.elderSeed != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.goldSeed}" th:style="${cat.goldSeed != 0} ? 'background-color: #ffff99' : ''"></td>
+
+                <td th:text="${cat.greenFruit}" th:style="${cat.greenFruit != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.purpleFruit}" th:style="${cat.purpleFruit != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.redFruit}" th:style="${cat.redFruit != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.blueFruit}" th:style="${cat.blueFruit != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.yellowFruit}" th:style="${cat.yellowFruit != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.epicFruit}" th:style="${cat.epicFruit != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.akuFruit}" th:style="${cat.akuFruit != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.elderFruit}" th:style="${cat.elderFruit != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.goldFruit}" th:style="${cat.goldFruit != 0} ? 'background-color: #ffff99' : ''"></td>
+
+                <td th:text="${cat.purpleBehemothStone}" th:style="${cat.purpleBehemothStone != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.redBehemothStone}" th:style="${cat.redBehemothStone != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.blueBehemothStone}" th:style="${cat.blueBehemothStone != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.greenBehemothStone}" th:style="${cat.greenBehemothStone != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.yellowBehemothStone}" th:style="${cat.yellowBehemothStone != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.epicBehemothStone}" th:style="${cat.epicBehemothStone != 0} ? 'background-color: #ffff99' : ''"></td>
+
+                <td th:text="${cat.purpleBehemothGem}" th:style="${cat.purpleBehemothGem != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.redBehemothGem}" th:style="${cat.redBehemothGem != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.blueBehemothGem}" th:style="${cat.blueBehemothGem != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.greenBehemothGem}" th:style="${cat.greenBehemothGem != 0} ? 'background-color: #ffff99' : ''"></td>
+                <td th:text="${cat.yellowBehemothGem}" th:style="${cat.yellowBehemothGem != 0} ? 'background-color: #ffff99' : ''"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

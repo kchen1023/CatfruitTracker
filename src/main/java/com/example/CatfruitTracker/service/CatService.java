@@ -4,6 +4,7 @@ import com.example.CatfruitTracker.entity.Cat;
 import com.example.CatfruitTracker.repository.CatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
@@ -19,7 +20,16 @@ public class CatService {
         this.catRepository = catRepository;
     }
 
-    public List<Cat> getAllCats() {
+    public List<Cat> findAll() {
         return catRepository.findAll();
     }
+
+//    public List<Cat> findByName(String name) {
+//        return catRepository.findByName(name);
+//    }
+
+    public List<Cat> findByRarity(String rarity) {
+        return catRepository.findByRarity(rarity);
+    }
+
 }
