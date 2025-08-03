@@ -2,39 +2,39 @@ package com.example.CatfruitTracker.entity;
 
 public class Inventory {
     // seeds
-    private int green_seed;
-    private int purple_seed;
-    private int red_seed;
-    private int blue_seed;
-    private int yellow_seed;
-    private int epic_seed;
-    private int aku_seed;
-    private int elder_seed;
-    private int gold_seed;
+    private int greenSeed;
+    private int purpleSeed;
+    private int redSeed;
+    private int blueSeed;
+    private int yellowSeed;
+    private int epicSeed;
+    private int akuSeed;
+    private int elderSeed;
+    private int goldSeed;
 
     // fruits
-    private int green_fruit;
-    private int purple_fruit;
-    private int red_fruit;
-    private int blue_fruit;
-    private int yellow_fruit;
-    private int epic_fruit;
-    private int aku_fruit;
-    private int elder_fruit;
-    private int gold_fruit;
+    private int greenFruit;
+    private int purpleFruit;
+    private int redFruit;
+    private int blueFruit;
+    private int yellowFruit;
+    private int epicFruit;
+    private int akuFruit;
+    private int elderFruit;
+    private int goldFruit;
 
-    // behemoth Stones
-    private int purple_behemoth_stone;
-    private int red_behemoth_stone;
-    private int blue_behemoth_stone;
-    private int green_behemoth_stone;
-    private int yellow_behemoth_stone;
-    private int epic_behemoth_stone;
+    // behemoth stones
+    private int purpleBehemothStone;
+    private int redBehemothStone;
+    private int blueBehemothStone;
+    private int greenBehemothStone;
+    private int yellowBehemothStone;
+    private int epicBehemothStone;
 
-    // Behemoth Gems
-    private int purple_behemoth_gem;
-    private int red_behemoth_gem;
-    private int blue_behemoth_gem;
-    private int green_behemoth_gem;
-    private int yellow_behemoth_gem;
+    // behemoth gems
+    private int purpleBehemothGem;
+    private int redBehemothGem;
+    private int blueBehemothGem;
+    private int greenBehemothGem;
+    private int yellowBehemothGem;
 }
