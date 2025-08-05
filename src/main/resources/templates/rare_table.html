@@ -53,6 +53,7 @@
             <tr th:each="cat: ${cats}">
                 <td th:text="${cat.id}" style="background-color: lightgray"></td>
                 <td th:text="${cat.name}" style="background-color: lightgray"></td>
+                <td th:text="${cat.rarity}" style="background-color: lightgray"></td>
                 <td th:text="${cat.greenSeed}" th:style="${cat.greenSeed != 0} ? 'background-color: #ffff99' : ''"></td>
                 <td th:text="${cat.purpleSeed}" th:style="${cat.purpleSeed != 0} ? 'background-color: #ffff99' : ''"></td>
                 <td th:text="${cat.redSeed}" th:style="${cat.redSeed != 0} ? 'background-color: #ffff99' : ''"></td>
