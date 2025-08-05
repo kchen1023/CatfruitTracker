@@ -22,12 +22,12 @@ public class CatController {
     @GetMapping("/rare")
     public String showRareCats(Model model) {
         model.addAttribute("cats", catService.findByRarity("rare"));
-        return "rarity_table";
+        return "rare_table";
     }
 
     @GetMapping("/super_rare")
     public String showSuperRareCats(Model model) {
         model.addAttribute("cats", catService.findByRarity("super_rare"));
-        return "rarity_table";
+        return "super_rare_table";
     }
 }
